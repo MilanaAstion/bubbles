@@ -1,0 +1,59 @@
+.bubbles{
+    max-width: 1400px;
+    margin: 50px auto;
+}
+.bubbles .cats{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.bubbles .cats > li{
+    width: 150px;
+    max-width: 150px;
+    padding: 0 40px;
+}
+.bubbles .cats > li:hover{
+	cursor: pointer;
+}
+.bubbles img{
+    display: block;
+    width: 100%;
+    border-radius: 50%;
+}
+.bubbles .image_text{
+    text-decoration: none;
+    text-align: center;
+    color:black;
+    margin-top: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-bottom: 3px;
+	font-size: 18px;
+}
+.bubbles .cats > li:hover img{
+    transition: transform 0.2s;
+    transform: scale(1.08);
+    box-shadow: 0 4px 18px rgb(34 34 34 / 15%);
+}
+.bubbles .cats > li:hover .image_text{
+    border-bottom: solid 2px #595959;
+}
+.sub_cats {
+    display: none;
+    border: 1px  #01257a  solid;
+    list-style: none;
+    padding: 10px 30px;
+
+}
+.sub_cats > li >a {
+    text-decoration: none;
+    font-size: 17px;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: black;
+	line-height: 30px;
+}
+.sub_cats > li >a:hover{
+    text-decoration: underline;
+}
+.bubbles .cats > li:hover .sub_cats{
+    display: block;
+}
